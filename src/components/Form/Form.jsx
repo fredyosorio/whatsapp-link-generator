@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Form.scss';
 
 const Form = () => {
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
+  const [url, setUrl] = useState('');
+  
+  const handleSubmit = e => {
+    setUrl(`https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`);
+    console.log('url is:', url);
+    e.preventDefault();
+  };
+
   return (
     <div className="container-fluid">
       <div className="header-accent teal"></div>
@@ -9,7 +19,7 @@ const Form = () => {
         <div className="card">
           <div className="card-detail teal accent-1"></div>
           <div className="form-wrap">
-            <form>
+            <form onSubmit={e => {handleSubmit(e)}}>
               <div className="row">
                 <div className="input-field col s12">
                   <h4>Whatsapp Link Generator</h4>
@@ -20,7 +30,15 @@ const Form = () => {
               </div>
               <div className="row">
                 <div className="input-field col s12">
-                  <input id="phone" name="phone" type="number" className="validate" required/>
+                  <input 
+                    id="phone"
+                    name="phone"
+                    type="number"
+                    className="validate"
+                    value={phone}
+                    onChange={e => setPhone(e.target.value)}
+                    required
+                  />
                   <label htmlFor="phone">Write your phone number here 📱</label>
                 </div>
               </div>
@@ -28,7 +46,11 @@ const Form = () => {
                 <div className="col s12">
                   <div className="row">
                     <div className="input-field col s12">
-                      <textarea id="message" className="materialize-textarea"/>
+                      <textarea
+                        id="message"
+                        className="materialize-textarea"
+                        onChange={e => setMessage(e.target.value)}
+                      />
                       <label htmlFor="message">Write your message here ✍️</label>
                     </div>
                   </div>
@@ -36,7 +58,10 @@ const Form = () => {
               </div>
               <div className="row">
                 <div className="col s12">
-                  <button className="btn waves-effect waves-light teal button-handler" type="submit" name="action">Generate
+                  <button
+                    className="btn waves-effect waves-light teal button-handler"
+                    type="submit"
+                    name="action">Generate
                     <i className="material-icons right">link</i>
                   </button>
                 </div>
