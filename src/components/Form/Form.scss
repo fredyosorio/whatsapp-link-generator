@@ -1,32 +1,9 @@
 // Variables
-$card-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
 $primary-color: #009688;
-
-.header-accent {
-	height: 278px;
-}
-
-.card-wrap {
-  margin: auto;
-  width: 600px; 
-}
-
-.card {
-  background-color: #ffffff;
-  margin-bottom: 48px;
-  -webkit-box-shadow: $card-shadow;
-  box-shadow: $card-shadow;
-  word-wrap: break-word;
-  margin-top: -100px;
-}
 
 .form-wrap {
   color: rgba(0,0,0,.87);
   padding: 20px 35px;
-}
-
-.card-detail {
-	height: 8px;
 }
 
 .margin-negative {
@@ -85,16 +62,26 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.result-wrapper {
+  margin-top: 10px;
+}
+
+.result-wrapper hr {
+  margin-bottom: 10px;
+  border-color: $primary-color;
+}
+
+.result {
+  padding: 10px 0;
+}
+
+.button-handler {
+  margin-bottom: 10px;
+}
+
 @media (max-width: 660px) {
   .header-accent {
     height: 122px;
-  }
-  .card:first-of-type {
-    margin-top: -50px;
-  }
-
-  .card-wrap {
-    width: 90%;
   }
 
   .button-handler {
