@@ -2,6 +2,10 @@
 
 ## Preview
 
+### Live preview
+https://whatsapp-links-generator.netlify.app/
+
+### Screenshots
 <p align="center"><a href="#" target="_blank"><img src="https://user-images.githubusercontent.com/83037408/173505373-c7e65d9b-ccd4-4a75-83ba-5453d4cc4534.png" width="1000"></a></p>
 
 <p align="center"><a href="#" target="_blank"><img src="https://user-images.githubusercontent.com/83037408/173504806-6dadd819-41f0-4c5a-8534-1e63f1675a59.png" width="1000"></a></p>
