@@ -6,9 +6,9 @@
 https://whatsapp-links-generator.netlify.app/
 
 ### Screenshots
-<p align="center"><a href="#" target="_blank"><img src="https://user-images.githubusercontent.com/83037408/173505373-c7e65d9b-ccd4-4a75-83ba-5453d4cc4534.png" width="1000"></a></p>
+![whatsapp-link-img1](https://user-images.githubusercontent.com/83037408/173616069-e2fb09c7-0f67-467d-b1e1-d990329f2f5a.png)
 
-<p align="center"><a href="#" target="_blank"><img src="https://user-images.githubusercontent.com/83037408/173504806-6dadd819-41f0-4c5a-8534-1e63f1675a59.png" width="1000"></a></p>
+![whatsapp-link-img2](https://user-images.githubusercontent.com/83037408/173617096-df5747af-59f7-4cff-a2ca-945e3140a15d.png)
 
 ## Whatsapp Link Generator 📱
 
