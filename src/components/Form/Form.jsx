@@ -3,33 +3,33 @@ import Card from '../Card/Card';
 import './Form.scss';
 
 const Form = () => {
-  const [phone, setPhone] = useState('');
-  const [message, setMessage] = useState('');
-  const [url, setUrl] = useState('');
-	const [copy, setCopy] = useState('Copy to clipboard');
+  const [phoneState, setPhoneState] = useState('');
+  const [messageState, setMessageState] = useState('');
+  const [urlState, setUrlState] = useState('');
+	const [copyState, setCopyState] = useState('Copy to clipboard');
   
   const handleSubmit = e => {
     e.preventDefault();
-    setUrl(`https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`);
+    setUrlState(`https://api.whatsapp.com/send?phone=${phoneState}&text=${encodeURIComponent(messageState)}`);
   };
 
 	const copyToClipboard = (url) => {
     navigator.clipboard.writeText(url);
-		setCopy('Copied!');
+		setCopyState('Copied!');
 		setTimeout(() => {
-			setCopy('Copy to clipboard');
+			setCopyState('Copy to clipboard');
 		}, 2000);
   };
 
 	function renderResult(url) {
 		return (
 			<div className="col s12 result-wrapper">
-				<span type="text" id="result" className="result" readOnly={!!url}>{url}</span>
+				<span type="text" id="result" className="result" readOnly={!!urlState}>{urlState}</span>
 				<hr />
 				<br />
 				<button
 					className="btn waves-effect waves-light teal button-handler"
-					onClick={() => {copyToClipboard(url)}}>{copy}
+					onClick={() => {copyToClipboard(urlState)}}>{copyState}
 					<i className="material-icons right">content_copy</i>
 				</button>
 			</div>
@@ -44,7 +44,7 @@ const Form = () => {
 						<div className="input-field col s12">
 							<h4>Whatsapp Link Generator</h4>
 							<p className="teal-text margin-negative">
-								Create personalized WhatsApp messages and send them to whoever you want (or yourself).
+								Create personalized WhatsApp messages and send them to whoever you want.
 							</p>
 						</div>
 					</div>
@@ -55,12 +55,15 @@ const Form = () => {
 								name="phone"
 								type="number"
 								className="validate"
-								value={phone}
-								onChange={e => setPhone(e.target.value)}
+								value={phoneState}
+								onChange={e => setPhoneState(e.target.value)}
 								required
 							/>
 							<label htmlFor="phone">Write your phone number here 📱</label>
-							<span className="helper-text">E.g <span className="teal-text">52</span>9831231237</span>
+							<span className="helper-text">E.g 529831231237
+								{' '}
+								<span className="teal-text">Don't forget the prefix</span>
+							</span>
 						</div>
 					</div>
 					<div className="row">
@@ -70,7 +73,7 @@ const Form = () => {
 									<textarea
 										id="message"
 										className="materialize-textarea"
-										onChange={e => setMessage(e.target.value)}
+										onChange={e => setMessageState(e.target.value)}
 										required
 									/>
 									<label htmlFor="message">Write your message here ✍️</label>
@@ -82,11 +85,11 @@ const Form = () => {
 						<div className="col s12">
 							<button
 								className="btn waves-effect waves-light teal button-handler"
-								type="submit">Generate URL
+								type="submit">Generate Link
 								<i className="material-icons right">link</i>
 							</button>
 						</div>
-						{url ? renderResult(url) : ''}
+						{urlState ? renderResult(urlState) : ''}
 					</div>
 				</form>
 			</div>
