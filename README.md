@@ -8,7 +8,7 @@ https://whatsapp-links-generator.netlify.app/
 ### Screenshots
 ![whatsapp-link-img1](https://user-images.githubusercontent.com/83037408/173616069-e2fb09c7-0f67-467d-b1e1-d990329f2f5a.png)
 
-![whatsapp-link-img2](https://user-images.githubusercontent.com/83037408/173617096-df5747af-59f7-4cff-a2ca-945e3140a15d.png)
+![whatsapp-link-generator3](https://user-images.githubusercontent.com/83037408/173932414-0e0a8351-bdd2-4cc2-811f-c6dfce78a591.png)
 
 ## Whatsapp Link Generator 📱
 
