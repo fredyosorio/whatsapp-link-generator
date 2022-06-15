@@ -41,6 +41,14 @@ const Form = () => {
 							<i className="material-icons right">content_copy</i>
 						</button>
 					</div>
+					<div className="col s12 m6">
+						<a
+							className="btn waves-effect waves-light teal button-handler"
+							href={url}
+							target="a_blank">Send WhatsApp
+							<i className="material-icons right">open_in_new</i>
+						</a>
+					</div>
 					<div className="col s12 m12">
 						<button
 							className="btn waves-effect waves-light teal accent-1 teal-text button-handler"
