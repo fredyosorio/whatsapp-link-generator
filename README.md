@@ -12,7 +12,7 @@ https://whatsapp-links-generator.netlify.app/
 
 ## Whatsapp Link Generator 📱
 
-This project is a simple web application to create personalized WhatsApp messages and send them to whoever you want or just share for social media marketing. Built with [Vite](https://vitejs.dev/) + [React](https://reactjs.org/) and some style with [materialize.css](https://materializecss.com/) and [SASS](https://sass-lang.com/). Anyway, feel free to modify it in your way.
+This project is a simple web application for creating personalized WhatsApp messages, sending them to anyone you want, or sharing them for social media marketing. Built with Vite + React, and styled with Materialize.css and SASS. Please feel free to change it as you'd like.
 
 ## Getting Started
 
@@ -23,9 +23,9 @@ To run the application, you can use the following commands.
 
 ## How to contribute
 
-Fork this repository, edit and submit a pull request.
+Fork this repository, edit, and submit a pull request.
 
-Please be very clear on your commit messages and pull request, empty pull request messages may be rejected without reason.
+Please be very clear on your commit messages and pull requests, empty pull request messages may be rejected without reason.
 
 ## License
 
